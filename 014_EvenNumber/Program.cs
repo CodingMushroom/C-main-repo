@@ -19,6 +19,7 @@ Console.WriteLine("Вариант 2. Эта прога проверяет чет
 System.Console.WriteLine();
 System.Console.Write("Введите число:    ");
 string writeNumber = Console.ReadLine();
+
 int number = Convert.ToInt32(writeNumber);
 string result = $"Число {number} является чётным";
 

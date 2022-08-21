@@ -17,7 +17,7 @@ else
 Console.WriteLine($"{dayNumber}-й день недели - это {Days[dayNumber - 1]}{txtResult}");
 Console.WriteLine();
 
-//Вариант12 Случайное число
+//Вариант12 Заданное число
 Console.WriteLine("Вариант2. Заданное число");
 
 Console.Write("Введите № дня недели - ");
