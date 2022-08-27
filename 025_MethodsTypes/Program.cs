@@ -1,4 +1,5 @@
 ﻿// Метод 1 (ничего не принимает и ничего не возвращает)
+
 Console.WriteLine("Метод 1");
 void Method1()
 {
@@ -45,7 +46,7 @@ Console.WriteLine("Метод 4");
 string Method4(int count, string text) // возвращаем строку, передаем int
 {
     int i = 0;
-    string result = String.Empty; // задаем пустку строку в переменную
+    string result = String.Empty; // задаем пустую строку в переменную
 
     while (i < count)
     {
