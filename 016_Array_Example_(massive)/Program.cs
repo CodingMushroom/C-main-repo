@@ -1,6 +1,6 @@
 ﻿// Задание: найти макс аргумент в массиве
 
-int MAX(int arg1, int arg2, int arg3) //ввели функцию max
+int MAX(int arg1, int arg2, int arg3) //ввели метод поиска max
 {
     int max_f = arg1;
     if(arg2 > max_f) max_f = arg2;
