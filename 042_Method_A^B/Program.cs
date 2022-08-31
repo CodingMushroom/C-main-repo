@@ -56,8 +56,6 @@ void PrintTable(int[] Array, int X)
     }
 }
 
-
-
 ExponTable(C,D);
 PrintTable(ExponTable(C,D),C);
 Console.WriteLine();
