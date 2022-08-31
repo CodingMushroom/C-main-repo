@@ -39,7 +39,7 @@ int[] ExponTable(int X, int Y)
     int Exponention = 1;
     for (int i = 0; i < Y; i++)
     {
-        Exponention = Exponention * Y;
+        Exponention = Exponention * X;
         Array[i] = Exponention;
     }
     return Array;
