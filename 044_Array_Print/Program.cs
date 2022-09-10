@@ -3,15 +3,15 @@
 Console.WriteLine();
 Console.WriteLine("Прога задает массив из 8 элементов и выводит его на экран");
 
-void FillArray(int[]array)
+void FillArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(1,100);
+        array[i] = new Random().Next(1, 100);
     }
 }
 
-void PrintArray(int[]array)
+void PrintArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {

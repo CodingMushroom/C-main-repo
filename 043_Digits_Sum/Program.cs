@@ -13,7 +13,7 @@ int SumCalculator(int X)
     while (X > 0)
     {
         lastdigit = X % 10;
-        Sum = Sum + lastdigit;      
+        Sum = Sum + lastdigit;
         X = X / 10;
     }
     return Sum;
