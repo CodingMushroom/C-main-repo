@@ -2,9 +2,9 @@
 // 2. Написать метод перевода из 2-ичной в 10-ичную систему
 // 3. Написать метод переводящий 10-ичное число в заданную систему
 
-// Часть 1
+// Часть 1 Описание методов
 
-void FillArray(int[] array)
+void FillArray(int[] array) // создание случайного двоичного числа (в виде массива)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -14,7 +14,7 @@ void FillArray(int[] array)
     else array[0] = array[0];
 }
 
-void PrintArray(int[] array)
+void PrintArray(int[] array) // вывод в консоль двоичного числа (массив)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -22,7 +22,7 @@ void PrintArray(int[] array)
     }
 }
 
-int NumberTranslation(int[] array)
+int NumberTranslation(int[] array)  // перевод из 2-ичной в 10-ичную систему
 {
     int Degree = array.Length - 1;
     int Sum = 0;
@@ -34,7 +34,7 @@ int NumberTranslation(int[] array)
     return Sum;
 }
 
-// Часть 2
+// Часть 2 Задаем 2-ичное число (через иснтрумент генерации случайно)
 // теория - https://programforyou.ru/calculators/number-systems
 
 Console.WriteLine();
