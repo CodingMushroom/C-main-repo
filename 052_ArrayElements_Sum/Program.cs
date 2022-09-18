@@ -6,7 +6,7 @@ void FillArray(int[] arrayX, int minX, int maxX)
 {
     for (int i = 0; i < arrayX.Length; i++)
     {
-        arrayX[i] = new Random().Next(minX, maxX + 1);
+        arrayX[i] = new Random().Next(minX, maxX + 1);  // "arrayX[i] = Random.Shared.Next(min, max)" так тоже можно
     }
 }
 
@@ -68,3 +68,26 @@ int Sum2 = NegativeSum(array);
 Console.WriteLine($"Сумма положительных значений из массива = {Sum1}");
 Console.WriteLine($"Сумма отрицательных значений из массива = {Sum2}");
 Console.WriteLine();
+
+
+//___________________________________________________________________________________________________________________________
+
+// string ArrayToString(int[] col)  -  метод для записи значений массива в строку
+// {
+//   return $"[{String.Join(' ', col)}]";
+// }
+
+// int[] FindMaxMinSum(int[] array)  -  пример как выводить несколько значений из метода через return (используем массив)
+// {
+//   int size = array.Length;
+//   int positive = 0;
+//   int negative = 0;
+
+//   for (int i = 0; i < size; i++)
+//   {
+//     if (array[i] > 0) positive += array[i];
+//     if (array[i] < 0) negative += array[i];
+//   }
+//   //return (positive, negative, "ку-ку");
+//   return new int[] { positive, negative };
+// }
