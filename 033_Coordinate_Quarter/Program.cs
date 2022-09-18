@@ -25,3 +25,4 @@ else if (QuarterNumber == 6) Console.WriteLine("на оси Ox");
 else Console.WriteLine($"в {QuarterNumber}-й четверти");
 
 Console.WriteLine();
+

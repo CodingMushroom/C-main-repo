@@ -39,3 +39,4 @@ if (F1 && F2 && F3 && F4) Console.Write("Это утверждение исти�
 else Console.WriteLine("Это утверждение ложно.");
 Console.WriteLine();
 Console.WriteLine();
+

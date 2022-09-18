@@ -42,6 +42,8 @@ int NegativeSum(int[] arrayW)
     return Sum;
 }
 
+// Часть 2 Обработка ввода пользователя
+
 Console.Write("Введите желаемую длину массива = ");
 int N = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[N];
@@ -52,6 +54,8 @@ string[] Text;
 Text = T.Split(',');
 int.TryParse(Text[0], out int min);
 int.TryParse(Text[1], out int max);
+
+// Часть 3 Расчет сумм
 
 FillArray(array, min, max);
 Console.Write("Сгенерирован массив: ");

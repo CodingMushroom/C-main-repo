@@ -16,3 +16,4 @@ else if (A == 4) Console.WriteLine("Диапазоны возможных коо
 else Console.WriteLine("Введен неверный № четверти");
 
 Console.WriteLine();
+

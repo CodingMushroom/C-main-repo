@@ -15,3 +15,4 @@ else if (NumberA % NumberB == 0)
 
 else
     Console.WriteLine($"A не кратно В. Остаток от деления = {NumberA % NumberB}");
+

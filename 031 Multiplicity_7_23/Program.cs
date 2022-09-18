@@ -34,4 +34,3 @@ else
     Console.WriteLine($"Число {numberB} НЕ делится на 7 и 23");
 
 Console.WriteLine();
-
