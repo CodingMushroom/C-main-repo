@@ -40,3 +40,35 @@ else Console.WriteLine("Это утверждение ложно.");
 Console.WriteLine();
 Console.WriteLine();
 
+//_____________________________________________________________________________________________________________________________________
+// Вариант решения задачи для вводимых пользователем значений истинности X и Y.
+// Console.Write("Введите значение истинности высказывания Х, 0 или 1: ");
+//  int i = -1;
+//        bool result = false;
+//         while (result == false)
+//         {
+//             Console.WriteLine("Введите, пожалуйста, 0 или 1! ");
+//             string s = Console.ReadLine();
+//                         result = int.TryParse(s, out i);
+//             if (s.Equals("0") || s.Equals("1") ) result = true;
+//             else result = false;
+//         }
+// Console.WriteLine(i);
+// bool X = Convert.ToBoolean(i);
+// 
+// Console.Write("Введите значение истинности высказывания Y, 0 или 1: ");
+// i = -1;
+//         result = false;
+//         while (result == false)
+//         {
+//             Console.WriteLine("Введите, пожалуйста, 0 или 1! ");
+//             string s = Console.ReadLine();
+//                         result = int.TryParse(s, out i);
+//             if (s.Equals("0") || s.Equals("1") ) result = true;
+//             else result = false;
+//         }
+// Console.WriteLine(i);
+// bool Y = Convert.ToBoolean(i);
+
+// if (!(X || Y) == (!X && !Y)) Console.Write("Это утверждение истинно.");
+// else Console.Write("Это утверждение ложно.");
