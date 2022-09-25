@@ -63,3 +63,18 @@ Console.Write(Difference);
 
 Console.WriteLine();
 Console.WriteLine();
+
+
+// Альтернативный вариант метода с функциями array.Max() и array.Min()
+//
+// void PrintDiffMinMax(double[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.WriteLine(array[i]);
+//     }
+//     double difference = array.Max() - array.Min();
+//     Console.WriteLine($"Минимальное значение массива {arr.Min()}, максимальное значение массива {arr.Max()}");
+//     Console.WriteLine($"Разница между минимальным и максимальным значениями массива составляет {difference}");
+//     Console.WriteLine();
+// }
