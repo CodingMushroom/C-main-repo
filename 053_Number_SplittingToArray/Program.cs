@@ -1,6 +1,8 @@
 ﻿// Разбиение числа и запись цифр в массив - пример метода
 
-int value = 123456;
+Console.Write("Введите число - ");
+int value = Convert.ToInt32(Console.ReadLine());
+
 value = Math.Abs(value);  // берем модуль числа, тк "-" тоже определиться в ячейку массива
 
 int size = value.ToString().Length;  // конвертация значения в строку
