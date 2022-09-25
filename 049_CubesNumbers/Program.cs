@@ -6,6 +6,7 @@ Console.Write("Введите число N - ");
 int N = Convert.ToInt32(Console.ReadLine());
 
 // Решение через цикл
+
 Console.WriteLine("Вариант решения 1 (цикл)");
 for (int counter = 1; counter <= N; counter++)
 {
