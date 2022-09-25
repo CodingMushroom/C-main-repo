@@ -90,6 +90,6 @@ git commit -m "Formatting"
 git push -u origin main
 
 Ctrl + пробел = заготовки для кода
-!= - не равно
+!= - НЕ РАВНО
 || - ИЛИ
 & - И
