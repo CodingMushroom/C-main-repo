@@ -93,7 +93,10 @@ git commit -m "Formatting"
 git push -u origin main
 
 Ctrl + пробел = заготовки для кода
+
 != - НЕ РАВНО
 || - ИЛИ
 & - И
-x += y эквивалент x = x + y
+
++= - x+=y эквивалент x = x + y
+
