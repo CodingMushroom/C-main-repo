@@ -59,3 +59,16 @@ void PrintTable(int[] Array, int X)
 ExponTable(C,D);
 PrintTable(ExponTable(C,D),C);
 Console.WriteLine();
+
+//_________________________________________________________________________________________________________________
+//Вариант2 (рекурсия с оптимизированной формулой нахождения степеней)
+Console.WriteLine();
+
+int PowerRecMath(int A, int N)
+{
+    if (N == 0) return 1;
+    else if (N % 2 == 0) return PowerRecMath(A*A, N/2);
+    else return A * PowerRecMath(A, N-1);
+}
+Console.WriteLine($"Расчет рекурсивным методом = {PowerRecMath(A, B)}");
+Console.WriteLine();
