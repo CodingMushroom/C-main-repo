@@ -1,4 +1,5 @@
 ﻿// // Урок 7 Пример: Игра "Ханойские башни"
+// https://www.cyberforum.ru/csharp-beginners/thread1552590.html
 
 Console.Write("Введите сколько колец в игре - ");
 int N = Convert.ToInt32(Console.ReadLine());
@@ -13,3 +14,4 @@ void Towers (string Start1, string Temp2, string End3, int Count) // With - от
 }
 
 Towers("1", "2", "3", N);
+
