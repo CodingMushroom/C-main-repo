@@ -121,5 +121,7 @@ internal class Program
         Console.Write($"Число {DecimalNumber} 10-чной системы в {System}-чной будет = ");
         NumberBackConvertation(DecimalNumber, System);
         Console.WriteLine();
+        Console.WriteLine();
     }
 }
+

@@ -11,9 +11,9 @@ void InOrderTraversal (int pos = 1)  // метод горизонтальног�
         int left = 2*pos;
         int right = 2*pos+1;
         if (left < tree.Length && !string.IsNullOrEmpty(tree[left])) InOrderTraversal(left); // если левая позиция (узел) имеется и поз-я не является пустой, то рекурсивно запускаем обход дерева с текущей позиции
-        Console.WriteLine(tree[pos])
+        Console.WriteLine(tree[pos]);
         if (right < tree.Length && !string.IsNullOrEmpty(tree[right])) InOrderTraversal(right);
     }
 }
 
-
+InOrderTraversal();
