@@ -15,4 +15,4 @@ while (value != 0)
     size --;
 }
 
-Console.WriteLine($"value: {string.Join(' ', numbers_array)}");
+Console.WriteLine($"Цифры из числа: {string.Join(' ', numbers_array)}");
