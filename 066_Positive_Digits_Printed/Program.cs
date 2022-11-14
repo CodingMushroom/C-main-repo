@@ -47,25 +47,29 @@ int[] StringToNum(string input)
     return Numbers;
 }
 
-int[] CountPositive()
+int CountPositive(int[] array)
 {
-    
+    int Sum = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] > 0)
+        {
+            Sum++;
+        }
+    }
+    return Sum;
 }
 
 // Решение
 
 Console.Write("Введите числа через запятую = ");
 int[] Numbers = StringToNum(Console.ReadLine());
+Console.WriteLine();
 
 PrintArray(Numbers);
-
-int sum = 0;
-for (int i = 0; i < Numbers.Length; i++)
-{
-    if (Numbers[i] > 0)
-    {
-        sum++;
-    }
-}
 Console.WriteLine();
-Console.WriteLine($"количество значений больше 0 = {sum}");
+Console.WriteLine();
+
+int Result = CountPositive(Numbers);
+Console.WriteLine($"Кол-во значений больше 0 = {Result}");
+Console.WriteLine();
