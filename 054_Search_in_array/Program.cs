@@ -32,7 +32,6 @@ void SearchInArray(int[] array, int number)
     if (Count == 0) Console.WriteLine("Искомое значение в массиве не найдено");
 }
 
-
 // Часть 2 Обработка ввода пользователя
 
 Console.Write("Введите желаемую длину массива = ");

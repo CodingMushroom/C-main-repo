@@ -1,43 +1,71 @@
 ﻿// Определить сколько чисел больше 0 введено с клавиатуры (№42)
 
-System.Console.Write("Введите набор отрицательных или положительных чисел разделений (без пробелов, запятых, точек итд) =  ");
-string Numbers = Convert.ToString(Console.ReadLine());
+// Методы
 
-string[] Numbers_to_Text = new string[Numbers.Length]; // создаем строковый массив длиной в значение длины введенных чисел
-
-void ClearText(string A, string[] X)
+void PrintArray(int[] array)
 {
-    for (int i = 0; i < X.Length; i++)
-        int k = 0;
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
     {
-        if (A[i] == ',') k++;
-        else if (A[i] == ' ') k++;
-        else if (A[i] == '.') k++;
-        else if (A[i] == '/') k++;
-        else X[k] = X[k] + $"{A[i]}"; // записываем значения (кроме " " "," "/" и ".") в строчку
+        if (i == array.Length - 1) Console.Write(array[i]); // чтобы скобка в конце ряда ставилась сразу, без пробела
+        else Console.Write(array[i] + " ");
     }
-    k++;
+    Console.Write("]");
 }
 
-void Converter
+int[] StringToNum(string input)
+{
+    int count = 1;
+    for (int i = 0; i < input.Length; i++)
+    {
+        if (input[i] == ',') count++; // считаем кол-во введенных пользователем запятых
+    }
+
+    int[] Numbers = new int[count]; // создаем пустой массив длиной в кол-во введенных чисел (узнали через подсчет , в строке выше)
+
+    int index = 0;
+    for (int i = 0; i < input.Length; i++)
+    {
+        string temp = string.Empty;
+
+        while (input[i] != ',')
+        {
+            if (i != input.Length - 1)
+            {
+                temp += input[i].ToString(); // записываем в строку числа без запятых
+                i++;
+            }
+            else
+            {
+                temp += input[i].ToString();
+                break;
+            }
+        }
+        Numbers[index] = Convert.ToInt32(temp);
+        index++;
+    }
+    return Numbers;
+}
+
+int[] CountPositive()
 {
     
 }
 
-Text = T.Split(',');
-Text = T.Split(' ');
+// Решение
 
-// Методы
+Console.Write("Введите числа через запятую = ");
+int[] Numbers = StringToNum(Console.ReadLine());
 
+PrintArray(Numbers);
 
-
-int CountPositiveNumbers(int[] array)
+int sum = 0;
+for (int i = 0; i < Numbers.Length; i++)
 {
-    int Counter = 0;
-
-    for (int i = 0; i < array.Length; i++)
+    if (Numbers[i] > 0)
     {
-        if (array[i] > 0) Counter = Counter + 1;
+        sum++;
     }
-    return Counter;
 }
+Console.WriteLine();
+Console.WriteLine($"количество значений больше 0 = {sum}");
