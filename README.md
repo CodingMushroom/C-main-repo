@@ -100,6 +100,7 @@ dotnet new console
 dotnet run
 clear
     Консоль основной папки (репозитория):
+git remote add origin ссылка на репо
 git add .
 git commit -m "Formatting"
 git push -u origin main

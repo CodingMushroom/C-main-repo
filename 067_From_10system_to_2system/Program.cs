@@ -1,6 +1,7 @@
 ﻿// Программа преобразования 10-ичного числа в 2-ичное (№43)
 // теория - https://programforyou.ru/calculators/number-systems
 
+// Часть 1 Метод - перевода из 10-ичной в заданную систему 
 
 void NumberBackConvertation(int number, int system) // перевод 10-го числа в указанную через "," систему
 {
@@ -51,9 +52,9 @@ void NumberBackConvertation(int number, int system) // перевод 10-го ч
     }
 }
 
-// Часть 3 Перевод из 10-ичной в заданную систему
+// Часть 2 Перевод из 10-ичной в заданную систему
 
-Console.Write("Введите число и его СС после запятой, для перевода в 10-ичную СС - ");
+Console.Write("Введите число в 10-й системе и, через запятую, введите число СС, в которую надо перевести 10-ичное число - ");
 string Text = Console.ReadLine();
 
 string[] number;                                                    // вводим массив для записи в [0] - целой части, в [1] - вещественной (после ,)
@@ -63,7 +64,8 @@ else number = Text.Split('.');                                      // если 
 int.TryParse(number[0], out int DecimalNumber);                     // перевод строкового текста в int  и записть ( через out) в переменную
 int.TryParse(number[1], out int System);
 
-Console.Write($"Число {DecimalNumber} 10-чной системы в {System}-чной будет = ");
+Console.Write($"Число {DecimalNumber} в 10-чной системе в {System}-чной будет = ");
 NumberBackConvertation(DecimalNumber, System);
 Console.WriteLine();
 Console.WriteLine();
+
