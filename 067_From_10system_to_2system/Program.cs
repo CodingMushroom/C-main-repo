@@ -69,3 +69,25 @@ NumberBackConvertation(DecimalNumber, System);
 Console.WriteLine();
 Console.WriteLine();
 
+
+// пример решения без рекурсии
+
+// метод
+
+//static string convertingToBin(int num, string snum)
+//{   
+//    if (num % 2 == 0) snum = "0" + snum;
+//    else snum = "1" + snum;
+//   
+//    if ((num/2) != 0) return convertingToBin(num/2, snum); 
+//    else return snum;
+//}
+
+// решение
+
+// Console.Write("Введите десятичное число: "); 
+//int numberDec = Convert.ToInt32(Console.ReadLine());
+
+//string numberBin = "";
+//numberBin = convertingToBin(numberDec, numberBin); Console.WriteLine();
+//Console.Write("Двоичное число: " + numberBin); 

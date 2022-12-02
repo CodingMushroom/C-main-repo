@@ -24,6 +24,7 @@ string Replace(string text, char oldValue, char newValue)  // Char хранит 
     return result;
 }
 
+
 string newText = Replace(text, ' ', '|');
 Console.WriteLine(newText);
 Console.WriteLine();

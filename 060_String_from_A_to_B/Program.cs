@@ -1,6 +1,7 @@
 ﻿// Упражнение из урока 7 Сборка строки чисел от меньшего к большему и наоборот
 
 // Вариант 1 Итеративный подход (от меньшего к большему)
+
 string NumbersFor1(int A, int B)
 {
     string Result = string.Empty;
@@ -34,7 +35,7 @@ string NumbersFor2(int A, int B)
 }
 Console.WriteLine(NumbersFor2(10,1));
 
-// Вариант 3 Сборка строки - рекурсия (от большего к меньшему)
+// Вариант 4 Сборка строки - рекурсия (от большего к меньшему)
 
 string NumbersRec2(int A, int B)
 {
