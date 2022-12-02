@@ -123,6 +123,7 @@ https://metanit.com/sharp/
 Math.Abs - дает модуль числа (double result = Math.Abs(-12.4); // 12.4)
 Math.Max(a, b): возвращает максимальное число из a и b
 Math.Min(a, b): возвращает минимальное число из a и b
+Math.round(a, b): округляет число (a) до ближайшего целого или до указ знака (b)
 
 РАЗНОЕ
 Console.ReadKey() - запрашиваем нажатие клавиши
