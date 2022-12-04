@@ -74,7 +74,7 @@ Console.WriteLine();
 
 // метод
 
-//static string convertingToBin(int num, string snum)
+//sstring convertingToBin(int num, string snum)
 //{   
 //    if (num % 2 == 0) snum = "0" + snum;
 //    else snum = "1" + snum;
